@@ -29,6 +29,12 @@ def categorie8():
     return request
 
 
+@app.route('/film/<identity>')
+def film(identity):
+    request = ra.getfilm(identity)
+    return request
+
+
 @app.route('/')
 def index():
     return render_template('juststreamit.html')

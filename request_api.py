@@ -29,9 +29,11 @@ class RequestApi:
         url_categorie = self.url_api + f"titles/?genre={categorie}"
         return self.getfilms(url_categorie)
 
-    def getinfofilm(self, id_film):
+    def getfilm(self, id_film):
         url = self.url_api + f"titles/{id_film}"
-        return self.getfilms(url)
+        film = requests.get(url)
+        if film.status_code == 200:
+            return film.json()
 
     @staticmethod
     def getfilms(url: str, size: int = 8):

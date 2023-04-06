@@ -7,8 +7,8 @@ const createImgInDiv = function(div_id,film_url,film_id){
     let img = document.createElement("img")
     img.id = "#film" +film_id
     img.className = "filmimage"
+    img.setAttribute("onclick","showModal(" + film_id + ")");
     img.src = film_url || "juststreamit.png"
-    img.setAttribute("onclick","modal(" + film_id + ")");
     let div = document.getElementById(div_id);
     div.appendChild(img);
 }
