@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
-    <script src='carousel.js'></script>
-    <script src='juststreamit.js'></script>
 
 
     <title>JustStreamIt</title>
@@ -14,47 +12,29 @@
     <p>Ceci est le contenu mon header</p>
 </header>
     <div>
-        <div id="best1">
-            <p>Ceci est le contenu du meilleur film</p>
-        </div>
-        <div id="best">
+        <div id="best1"></div>
+        <div id="best-container">
             <p>Ceci est le contenu du carousel des 7 meilleurs films (cette année 2020)</p>
+            <div id="best" class="slideshow-container"></div>
         </div>
-        <div id="bestalltime">
+
+        <div id="bestalltime-container">
             <p>Ceci est le contenu du carousel des 8 meilleurs films all-time</p>
+            <div id="bestalltime" class="slideshow-container"></div>
         </div>
-        <div id="worst">
+        <div id="worst-container">
             <p>Ceci est le contenu du carousel des 8 plus mauvais</p>
+            <div id="worst" class="slideshow-container"></div>
         </div>
-        <div id="romance">
+        <div id="romance-container">
             <p>Ceci est le contenu du carousel des 8 meilleurs romance</p>
-        </div>
-        <div id="carousel-container">
-            <div>
-                <ul id="carousel" class="animate">
-                    <li class="slide animate">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-1.jpg"/>
-                    </li>
-                    <li class="slide animate">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-2.jpg"/>
-                    </li>
-                    <li class="slide animate">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-3.jpg"/>
-                    </li>
-                    <li class="slide animate">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-4.jpg"/>
-                    </li>
-                    <li class="slide animate">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-5.jpg"/>
-                    </li>
-                </ul>
-            </div>
-            <div id="controls">
-                <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
-                <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
-            </div>
+            <div id="romance" class="slideshow-container"></div>
         </div>
     </div>
+
+    <script src='juststreamit.js'></script>
+    <script src='carousel.js'></script>
+    <script src='modal.js'></script>
 </body>
 
 </html>
