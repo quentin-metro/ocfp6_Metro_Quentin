@@ -2,39 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/banner.css" rel="stylesheet">
 
 
     <title>JustStreamIt</title>
 </head>
 <body>
 <header>
-    <p>Ceci est le contenu mon header</p>
+    <div class="banner">
+        <div class="c1_r1 middle left">
+            <p>JustStreamIt</p>
+        </div>
+        <div class="c2_r1 middle right">
+            <a href=#>Accueil</a>
+        </div>
+        <div class="c3_r1 middle">
+            <a href=#>Catégories</a>
+        </div>
+    </div>
 </header>
     <div>
-        <div id="best1"></div>
+        <div id="best1" class="thebest">
+            <div>
+                <button class="button-play">&#10148;</button>
+            </div>
+        </div>
         <div id="best-container">
-            <p>Ceci est le contenu du carousel des 7 meilleurs films (cette année 2020)</p>
-            <div id="best" class="slideshow-container"></div>
+            <h3>Ceci est le contenu du carousel des 7 meilleurs films (cette année 2020)</h3>
+            <div id="best" class="slideshow-container" ></div>
         </div>
 
         <div id="bestalltime-container">
-            <p>Ceci est le contenu du carousel des 8 meilleurs films all-time</p>
+            <h3>Ceci est le contenu du carousel des 8 meilleurs films all-time</h3>
             <div id="bestalltime" class="slideshow-container"></div>
         </div>
         <div id="worst-container">
-            <p>Ceci est le contenu du carousel des 8 plus mauvais</p>
+            <h3>Ceci est le contenu du carousel des 8 plus mauvais</h3>
             <div id="worst" class="slideshow-container"></div>
         </div>
         <div id="romance-container">
-            <p>Ceci est le contenu du carousel des 8 meilleurs romance</p>
+            <h3>Ceci est le contenu du carousel des 8 meilleurs romance</h3>
             <div id="romance" class="slideshow-container"></div>
         </div>
     </div>
 
-    <script src='juststreamit.js'></script>
-    <script src='carousel.js'></script>
-    <script src='modal.js'></script>
+    <script src='./js/juststreamit.js'></script>
+    <script src='./js/carousel.js'></script>
+    <script src='./js/modal.js'></script>
 </body>
 
 </html>

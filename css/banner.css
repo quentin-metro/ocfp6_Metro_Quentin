@@ -1,0 +1,44 @@
+.banner {
+    background-color: #62757f;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.c1_r1 {
+    grid-column-start: 1;
+    grid-row: 1;
+}
+.c2_r1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.c3_r1 {
+    grid-column-start: 3;
+    grid-row: 1;
+}
+
+.middle{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left{
+    margin-left: 6%;
+    margin-right: auto;
+}
+
+.right{
+    margin-left: auto;
+    margin-right: 6%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}

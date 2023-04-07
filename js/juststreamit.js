@@ -19,7 +19,7 @@ const createAFilm = function(id_carousel,film_data){
     div.id = '#f' + film_data["id"]
     div.className = "itemImage"
     // Only the first image in a slideshow is visible
-    if (block.getElementsByClassName("itemImage").length == 0){
+    if (block.getElementsByClassName("itemImage").length < 4){
         div.style.display = "block"
     } else {
         div.style.display = "none"
@@ -37,6 +37,12 @@ const best8film = async function(){
     let h3 = document.createElement("h3")
     h3.innerHTML = film_data["0"]["title"]
     block1.appendChild(h3)
+    let p = document.createElement("p")
+    let best_id = film_data["0"]["id"]
+    let best_response = await fetch("http://127.0.0.1:5000/film/"+ best_id)
+    let best_data = await best_response.json()
+    p.innerHTML = best_data["description"]
+    block1.appendChild(p)
     createAFilm("best1",film_data["0"])
     // 7 other best film
     for (let i=1; i <= 7; i++){
@@ -71,10 +77,7 @@ const best8romance = async function(){
     }
 }
 
-
 best8film();
 best8alltime();
 worst8film();
 best8romance();
-const event = new Event("ApiCall");
-document.dispatchEvent(event);
