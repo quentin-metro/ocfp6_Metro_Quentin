@@ -29,3 +29,6 @@ Prototype de la version web de 'JustStreamIt', affichant des propositions de fil
 - lors d'un clic sur une affiche , une fenêtre modale apparaitra
 - celle-ci contient les différentes informations connues sur un film
 - une icône 'X' ou un clic à l'extérieur de la modale permettra de fermer la fenêtre modale
+
+## Troubleshooting
+- Si les affiches n'apparaissent pas au chargement : vérifier que `juststreamit.py` et l'api `OCMovies-API` soient tous deux actifs
