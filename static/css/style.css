@@ -1,4 +1,4 @@
-{box-sizing:border-box}
+
 body {font-family: Verdana,sans-serif;margin:0}
 
 .thebest {
@@ -93,16 +93,11 @@ h3 {text-align: center;}
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+
 
 @keyframes fade {
   from {opacity: .4}

@@ -23,7 +23,7 @@ async function showModal(film_id) {
     // Create modal content
     let img = document.createElement("img")
     img.className = "modal-image"
-    img.src = film_data["image_url"] || "juststreamit.png"
+    img.src = film_data["image_url"] || "./static/img/juststreamit.png"
     modal_content.appendChild(img);
     let ul = document.createElement("ul");
     let info_needed = ["Genre","Date de sortie","Rated","Score Imdb","Réalisateur","Acteurs","Durée","Origine","Box Office","Résumé"]
